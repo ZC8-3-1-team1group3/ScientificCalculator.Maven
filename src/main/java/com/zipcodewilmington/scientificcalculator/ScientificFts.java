@@ -52,9 +52,15 @@ public class ScientificFts {
         String[] modeTitles = {"binary", "octal", "decimal", "hexadecimal"};
         String[] arr = {binary, octal, decimal, hexadecimal};
         boolean displayModeActive = true;
+        String tempDisplayModeStatus = "\ncycling through display modes...\n";
+        String nextModeCommand = "'dm' next display mode: \n";
+
+        String cycleDisplayModeMenu = (tempDisplayModeStatus +
+                nextModeCommand);
 
         while (displayModeActive) {
-            System.out.println("cycling through display modes...");
+            System.out.print(cycleDisplayModeMenu);
+
             if (userInput().equals("dm")) {
                 System.out.println(modeTitles[index] + ": " + arr[index]);
                 index++;
