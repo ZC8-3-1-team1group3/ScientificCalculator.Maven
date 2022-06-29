@@ -9,7 +9,8 @@ import static java.lang.System.exit;
  */
 public class MainApplication {
     static String powerOffPrompt = "Calculator powering off...";
-    public class varSpace {
+    // Added static to class varSpace
+    public static class varSpace {
         public static double num1;
         public static double num2;
         public static double mem;
